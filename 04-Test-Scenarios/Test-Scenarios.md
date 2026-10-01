@@ -2,8 +2,8 @@
 
 ## 1. Login
 - TS-001: Verify login with a valid username and a valid password. 
-- TS-002: Verify login with an invalid username and a valid password.
-- TS-003: Verify login with a valid username and an invalid password.
+- TS-002: Verify login with a valid username and an invalid password.
+- TS-003: Verify login with an invalid username and a valid password.
 - TS-004: Verify login with an invalid username and an invalid password.
 - TS-005: Verify login when the username and password fields are empty. 
 - TS-006: Verify login when the username is empty and password is filled. 

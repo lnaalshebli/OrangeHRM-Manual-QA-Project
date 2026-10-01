@@ -17,3 +17,4 @@
 ## 2. Logout
 - TS-011: Verify that users can log out from their account.
 - TS-012: Verify that the user session ends after logout.
+- TS-013: Verify that the user cannot return to the Dashboard using the browser Back button after logout.

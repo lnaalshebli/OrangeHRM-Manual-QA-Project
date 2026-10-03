@@ -12,9 +12,9 @@
 
 **Severity:** High
 
-**Priority:** Highest
+**Priority:** High
 
-**Environment:** Desktop / Chrome / Production (Public Demo)
+**Environment:** Desktop / Windows 11 / Chrome / Production (Public Demo)
 
 **Status:** Open
 

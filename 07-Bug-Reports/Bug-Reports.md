@@ -3,6 +3,7 @@
 ## Bug Report 001
 
 **Bug ID:** BR-001
+
 **Related Test Case:** TC-013
 **Related Scenario:** TS-013
 **Title:** Dashboard is displayed after logout when clicking the browser Back button

@@ -1,4 +1,3 @@
-
 # Requirements
 
 ## 1. Login
@@ -15,17 +14,7 @@
 
 ---
 
-## 2. Dashboard
-
-**REQ-006:** After successful login, the system shall display the Dashboard.
-
-**REQ-007:** The Dashboard shall provide access to the main system modules available to the logged-in user.
-
-**REQ-008:** Users shall only be able to access modules and features permitted by their role.
-
----
-
-## 3. Employee Management
+## 2. Employee Management
 
 **REQ-009:** Authorized users shall be able to view employee records.
 
@@ -39,21 +28,7 @@
 
 ---
 
-## 4. Leave Management
-
-**REQ-014:** Authorized users shall be able to view available leave information.
-
-**REQ-015:** Employees shall be able to apply for leave.
-
-**REQ-016:** The system shall require the necessary information when submitting a leave request.
-
-**REQ-017:** The system shall allow authorized users to approve or reject leave requests.
-
-**REQ-018:** The system shall display the current status of a leave request.
-
----
-
-## 5. User Access and Permissions
+## 3. User Access and Permissions
 
 **REQ-019:** The system shall restrict access to features based on the user's assigned role.
 
@@ -61,7 +36,7 @@
 
 ---
 
-## 6. General Requirements
+## 4. General Requirements
 
 **REQ-021:** The system shall provide clear feedback when an operation is successful or unsuccessful.
 

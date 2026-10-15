@@ -36,4 +36,4 @@
 * **TS-023:** Verify that authorized users can search for employees using the available search criteria.
 * **TS-024:** Verify that search results display the expected matching employee(s).
 * **TS-025:** Verify that the search supports partial matches.
-* **TS-026:** Verify whether the search is case-sensitive.
+* **TS-026:** Verify that the search is not case-sensitive.

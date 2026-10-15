@@ -10,7 +10,7 @@
 | Browser | Google Chrome |
 | Operating System | Windows 11 |
 | Execution Date | 15 October 2026 |
-| Executed By | LNA Ziad Alshebli |
+| Executed By | Lna Ziad Alshebli |
 
 ## 2. Execution Summary
 

@@ -1,0 +1,114 @@
+Test Case ID,Related Scenario,Title,Preconditions,Test Data,Steps,Expected Result,Actual Result        ,Status
+TC-014,TS-014,Verify that the Employee List displays the expected employee fields,"The user is logged in to OrangeHRM and has permission to view the Employee List.
+Employee ID 0562 exists in the system.","Employee ID: 0562
+First Name: Archana
+Last Name: Suresh
+","1. Open the PIM module.
+2. Select Employee List.
+3. Verify the displayed column headers.
+4. Locate employee ID 0562 in the displayed list.
+5. Verify that employee ID 0562 is displayed with the correct name.
+","The Employee List displays the expected fields: Id, First (& Middle) Name, Last Name, Job Title, Employment Status, Sub Unit, Supervisor, and Actions.
+
+Employee ID 0562 is displayed with the name Archana Suresh.
+                                                                                  ","The Employee List displayed all expected fields, and employee ID 0562 was displayed with the name Archana Suresh.
+",PASS
+TC-015,TS-015,Verify that opening an individual employee's profile displays the expected information,"The user is logged in and has permission to view employee profiles.
+","Employee ID: 0562
+Employee Name: Archana Suresh
+","1. Open the Employee List.
+2. Locate employee ID 0562.
+3. Click the Edit icon in the Actions column.
+4. Review the employee information displayed in the profile.","The employee profile opens successfully and displays the correct employee information, including the Employee ID, first name, last name, and other available details.
+","The employee profile opened successfully and displayed the expected employee information for employee ID 0562.",PASS
+TC-016,TS-016,Verify that the Employee List supports pagination when there are many records,The user is logged in and is on the Employee List page. The list contains more than one page of records.,N/A,"1. Scroll to the bottom of the Employee List.
+2. Click the Next Page button.
+3. Verify that the next set of employee records is displayed.
+4. Click the Previous Page button.
+5. Verify that the previous set of employee records is displayed.","The Employee List allows the user to navigate between pages, and the correct employee records are displayed on each page without duplication or missing records.
+","The Employee List successfully displayed the next and previous pages, and the employee records were displayed correctly.",PASS
+TC-017,TS-017, Verify that a new employee can be added with the required information,"The user is logged in and is on the Employee List page.
+The user has permission to add a new employee.
+","First Name: Lna
+Middle Name: Ziad
+Last Name: Alshebli
+Employee ID: 0207
+","1. Click the Add button.
+2. Enter the required employee information.
+3. Click Save.
+","The employee is added successfully, and the system opens the employee profile displaying the name “Lna Ziad Alshebli” and Employee ID “0207”.","The employee was added successfully, and the system opened the employee profile page displaying the employee name ""Lna Ziad Alshebli"" and Employee ID ""0207"".",PASS
+TC-018,TS-018,Verify that the system handles adding an employee with a duplicate Employee ID,The user is logged in and is on the Employee List page. Employee ID 0207 already exists in the system.,"First Name: Ala'a
+Middle Name: Ahmad
+Last Name: Omari
+Employee ID: 0207
+","1. Click the Add button.
+2. Enter the employee's required information.
+3. Enter the existing Employee ID 0207.
+4. Click Save.
+","The employee is not saved, and the message “Employee Id already exists” is displayed under the Employee Id field.
+","The system prevented the employee from being saved and displayed the validation message ""Employee Id already exists"" under the Employee Id field.",PASS
+TC-019,TS-019,Verify that entered data is not saved when the user cancels the Add Employee form,"The user is logged in and is on the Add Employee page.","First Name: Ala'a
+Middle Name: Ahmad
+Last Name: Omari
+Employee ID: 0204
+","1. Enter the employee's required information.
+2. Click Cancel.
+3. Open the Employee List.
+4. Search for Employee ID 0204 or the employee name.
+","The entered data is discarded, the Add Employee form is closed, and the employee is not displayed in the Employee List.
+","The entered employee data was discarded after clicking Cancel, and the employee was not displayed in the Employee List.",PASS
+TC-020,TS-020,"Verify that the system navigates to the newly created employee's profile after successful creation
+","The user is logged in and is on the Add Employee page.","First Name: Omar
+Middle Name: A
+Last Name: Saleh
+Employee ID: 0101
+","1. Enter the required employee information.
+2. Click Save.
+3. Observe the page displayed after the employee is saved.","The employee is added successfully, and the system navigates the user to the newly created employee's profile page.
+","The employee was added successfully, and the system navigated the user to the newly created employee's profile page displaying the employee name ""Omar A Saleh"" and Employee ID ""0101"".",PASS
+TC-021,TS-021,Verify that the system displays validation errors when required employee information is missing,"The user is logged in and is on the Add Employee page.","First Name: Empty
+Middle Name: Empty
+Last Name: Empty
+Employee ID: 0102","1. Leave the First Name and Last Name fields empty.
+2. Enter Employee ID 0102.
+3. Click Save.
+","The employee is not saved, and the message “Required” is displayed under the First Name and Last Name fields.","The system prevented the employee from being saved and displayed the validation message ""Required"" under the First Name and Last Name fields.",PASS
+TC-022,TS-022,Verify that authorized users can edit existing employee information,"The user is logged in and is on the Employee List page.
+Employee ID 0562 exists in the list.
+","Employee ID: 0562
+Current First Name: Archana
+Updated First Name: Archana Test
+
+","1. Locate employee ID 0562 in the Employee List.
+2. Click the Edit icon.
+3. Change the First Name from ""Archana"" to ""Archana Test"".
+4. Click Save.
+5. Verify that the updated name is displayed.
+
+","The employee information is updated successfully, and the updated details are displayed in the employee profile or Employee List.","The employee's first name was updated successfully from ""Archana"" to ""Archana Test"", and the updated name was displayed.",PASS
+TC-023,TS-023,Verify that authorized users can search for employees using the available search criteria,"The user is logged in and is on the Employee List page.
+Employee ID 0562 exists in the system.","Employee ID: 0562
+","1. Enter Employee ID 0562 in the Employee Id search field.
+2. Click Search.
+","The search is performed successfully without an error, and employee ID 0562 is displayed in the results.
+","The employee search was performed successfully using Employee ID 0562 without displaying any errors, and employee ID 0562 was displayed in the results.
+",PASS
+TC-024,TS-024,Verify that search results display the expected matching employee(s),"The user is logged in and is on the Employee List page.
+Employee ID 0207 exists in the system.
+","Employee Name: Lna
+Expected Employee ID: 0207
+Expected Full Name: Lna Ziad Alshebli","1. Enter ""Lna"" in the Employee Name field.
+2. Click Search.
+3. Review the displayed search result.","The search results display the employee ""Lna Ziad Alshebli"" with Employee ID 0207.","The search results displayed the employee ""Lna Ziad Alshebli"" with Employee ID 0207.
+",PASS
+TC-025,TS-025,Verify that the search supports partial matches,"The user is logged in and is on the Employee List page.
+The employee ""Lna Ziad Alshebli"" exists in the system.","Employee Name: Ln
+","1. Enter ""Ln"" in the Employee Name field.
+2. Click Search.
+3. Review the search results.","The search displays the employee ""Lna Ziad Alshebli"" when the partial name ""Ln"" is entered.","The search displayed the employee ""Lna Ziad Alshebli"" when the partial name ""Ln"" was entered.",PASS
+TC-026,TS-026,Verify that the search is not case-sensitive,"The user is logged in and is on the Employee List page.
+The employee ""Lna Ziad Alshebli"" exists in the system.","Employee Name: LNA
+","1. Enter ""LNA"" in the Employee Name field.
+2. Click Search.
+3. Check the search result.","The search displays the employee “Lna Ziad Alshebli”, the same result as searching with “Lna”.","The employee Lna Ziad Alshebli was displayed when searching with ""LNA"", as it was with ""Lna"".
+",PASS

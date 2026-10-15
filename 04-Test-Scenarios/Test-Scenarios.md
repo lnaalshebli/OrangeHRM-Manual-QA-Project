@@ -30,7 +30,7 @@
 * **TS-017:** Verify that a new employee can be added with the required information.
 * **TS-018:** Verify that the system handles adding an employee with a duplicate Employee ID.
 * **TS-019:** Verify that entered data is not saved when the user cancels the Add Employee form.
-* **TS-020:** Verify that the system provides appropriate confirmation or navigation after successfully adding a new employee.
+* **TS-020:** Verify that the system navigates to the newly created employee's profile after successful addition.
 * **TS-021:** Verify that the system displays validation errors when required employee information is missing.
 * **TS-022:** Verify that authorized users can edit existing employee information.
 * **TS-023:** Verify that authorized users can search for employees using the available search criteria.
